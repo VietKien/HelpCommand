@@ -3,6 +3,10 @@ Linux
 top –c : dùng để xem thông tin hoạt động của server
 free –m : dùng để kiểm tra thông tin bộ nhớ
 df –h : dùng để kiểm tra dụng lượng ổ cứng
+du -h : Kiểm tra dung lượng thư mục
+grep -r "SEARCH_KEY" /forder/to/check -nH : Tìm kiếm từ khóa file text trong thư mục
+nohup ruby sitemap.rb > sitemap.log 2>&1 & : Chạy process ngầm và ghi log ra file 
+ls -l | grep -v ^l | wc -l : Đếm số lượng file trong thư mục
 sync; echo 3 > /proc/sys/vm/drop_caches : dùng để giải phóng caches và làm tăng bộ nhớ
 
 Oracle
